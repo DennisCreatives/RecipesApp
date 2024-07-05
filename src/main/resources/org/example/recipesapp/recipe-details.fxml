@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.recipesapp.RecipeDetailController"
+      spacing="10" alignment="CENTER" styleClass="recipe-detail">
+    <TextField fx:id="nameField" promptText="Recipe Name"/>
+    <TextArea fx:id="ingredientsArea" promptText="Ingredients (one per line)" prefHeight="100"/>
+    <TextArea fx:id="instructionsArea" promptText="Instructions" prefHeight="100"/>
+    <HBox spacing="10">
+        <TextField fx:id="prepTimeField" promptText="Prep Time (minutes)"/>
+        <TextField fx:id="cookTimeField" promptText="Cook Time (minutes)"/>
+        <TextField fx:id="servingsField" promptText="Servings"/>
+    </HBox>
+    <TextField fx:id="categoryField" promptText="Category"/>
+    <Button text="Save" onAction="#saveRecipe"/>
+</VBox>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.PieChart?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.recipesapp.MainController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="New Recipe" onAction="#newRecipe"/>
+                <MenuItem text="Exit" onAction="#exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <VBox spacing="10">
+            <TextField fx:id="searchField" promptText="Search Recipes"/>
+            <Button text="Search" onAction="#searchRecipes"/>
+            <ListView fx:id="recipeListView" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </left>
+
+    <center>
+        <TabPane>
+            <Tab text="Recipe Details">
+                <fx:include source="recipe-details.fxml" fx:id="recipeDetail"/>
+            </Tab>
+            <Tab text="Category Distribution">
+                <PieChart fx:id="categoryChart"/>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
