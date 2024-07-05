@@ -1,0 +1,48 @@
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+.button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.list-view {
+    -fx-background-color: #fff;
+    -fx-border-color: #ddd;
+}
+
+.menu-bar {
+    -fx-background-color: #333;
+}
+
+.menu-bar .label{
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.recipe-detail {
+    -fx-padding: 20px;
+}
+
+.text-field, .text-area {
+    -fx-background-color: #fff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+}
+
+.pie-chart{
+    -fx-background-color: #f8f8f8;
+}
+
+.pie-chart-label{
+    -fx-fill: #f333;
+}
